@@ -142,6 +142,11 @@
     }
 
     &.annex {
+      max-height: unset;
+      @media (min-width: 768px) {
+        max-height: 548px;
+      }
+
       .inner-wrapper {
         max-width: 100%;
 
@@ -164,10 +169,10 @@
             font-family: $proximanova;
             font-style: normal;
             font-weight: 700;
-            font-size: calc(max(min(2.6vw, 22px), 14px));
-            line-height: calc(max(min(2.6vw, 25.5px), 14px));
+            font-size: 14px;
+            line-height: 16px;
             display: inline-block;
-            letter-spacing: 0.1em;
+            letter-spacing: 1.4px;
             text-transform: uppercase;
             padding: 10px;
             background: $blue;
@@ -177,6 +182,7 @@
             @media (min-width: 768px) {
               font-size: 20px;
               line-height: 22px;
+              letter-spacing: 0.1em;
             }
           }
 
@@ -190,20 +196,28 @@
           }
 
           h1 {
-            font-family: $proximanova;
+            font-size: 35px;
             font-style: normal;
             font-weight: 700;
-            font-size: 25px;
-            line-height: 35px;
-            letter-spacing: 0.2em;
+            line-height: 45px; /* 128.571% */
+            letter-spacing: 3.5px;
             text-transform: uppercase;
+            font-family: $proximanova;
+            //font-style: normal;
+            //font-weight: 700;
+            //font-size: 25px;
+            //line-height: 35px;
+            //letter-spacing: 0.2em;
+            //text-transform: uppercase;
             color: $true-white;
             margin: 20px 0 0;
+            padding-bottom: 35px;
 
             @media (min-width: 768px) {
               font-size: 28px;
               line-height: 48px;
               margin: 45px 0 0;
+              padding-bottom: 0;
             }
 
             @media (min-width: 992px) {
@@ -217,11 +231,12 @@
           max-width: 100%;
           bottom: 0;
           padding: 0 0 15px;
-          display: block;
+          display: none;
           position: relative;
           margin-top: 60px;
 
           @media (min-width: 768px) {
+            display: block;
             margin-top: 100px;
           }
 
@@ -231,5 +246,42 @@
         }
       }
     }
+  }
+}
+
+.bottom-link.outside-hero {
+  width: 100%;
+  background: $blue;
+
+  > .container {
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  span, a {
+    color: #000;
+    text-align: center;
+    font-family: $proximanova;
+    font-size: 12.455px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 14.99px; /* 120.357% */
+    font-variant: all-small-caps;
+    letter-spacing: 1.245px;
+  }
+
+  a {
+    text-decoration: underline;
+    transition: all 0.3s;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: none;
   }
 }
