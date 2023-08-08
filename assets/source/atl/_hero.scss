@@ -126,7 +126,8 @@
           font-variant: all-small-caps;
           color: $true-black;
           text-align: center;
-          padding: 10px 15px;
+          //padding: 10px 15px;
+          padding: 10px 17.5px;
 
           a {
             color: $true-black;
@@ -177,13 +178,14 @@
             padding: 10px;
             background: $blue;
             color: $true-black;
-            margin-bottom: 8px;
+            //margin-bottom: 8px;
+            margin-bottom: 9px;
 
-            @media (min-width: 768px) {
-              font-size: 20px;
-              line-height: 22px;
-              letter-spacing: 0.1em;
-            }
+            //@media (min-width: 768px) {
+            //  font-size: 20px;
+            //  line-height: 22px;
+            //  letter-spacing: 0.1em;
+            //}
           }
 
           .trust-link a{
@@ -221,8 +223,9 @@
             }
 
             @media (min-width: 992px) {
-              font-size: 38px;
-              line-height: 58px;
+              font-size: 50px;
+              line-height: 79px;
+              letter-spacing: 2.5px;
             }
           }
         }
@@ -233,11 +236,11 @@
           padding: 0 0 15px;
           display: none;
           position: relative;
-          margin-top: 60px;
+          //margin-top: 60px;
 
           @media (min-width: 768px) {
             display: block;
-            margin-top: 100px;
+            //margin-top: 100px;
           }
 
           span {
