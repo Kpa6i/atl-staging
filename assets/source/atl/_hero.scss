@@ -212,6 +212,7 @@
             @media (min-width: 768px) {
               margin: 45px 0 0;
               padding-bottom: 0;
+              letter-spacing: 10px;
             }
 
             @media (min-width: 992px) {
@@ -230,7 +231,8 @@
   background: $blue;
 
   > .container {
-    height: 44px;
+    height: 30px;
+    padding-bottom: 4px !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -258,6 +260,11 @@
   }
 
   @media (min-width: 768px) {
+    > .container {
+      height: 44px;
+      padding-bottom: 0 !important;
+    }
+
     span, a {
       font-size: 18px;
       line-height: 22.5px;
